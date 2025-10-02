@@ -26,23 +26,37 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 mb-20">
-<nav>
-  <Header />
-</nav>
-      
-      <section className="w-full relative h-[50vh] md:h-auto bg-[#57029C]">
-        <div className="hidden md:block">
+      <nav>
+        <Header />
+      </nav>
 
-        <img className="w-full" src="/assets/background.png" alt="background" />
-        <img
-          className="absolute top-44 w-full  max-w-[372px] left-10 pointer-events-none"
-          src="/assets/boy.png"
-          alt="boy"
-        />
-        <img className="absolute top-48 w-[95px] left-72 pointer-events-none" src="/assets/500.png" alt="" />
-        <img className="absolute top-[40%] w-[167px] right-20  pointer-events-none" src="/assets/happy.png" alt="" />
-        <img className="absolute top-[80%] w-[140px] left-80 pointer-events-none" src="/assets/rating.png" alt="" />
-        <img className="absolute top-72 w-full max-w-[480px] right-0 pointer-events-none" src="/assets/girl.png" alt="girl" />
+
+
+
+
+
+
+
+
+
+      <section
+        className="w-full relative h-[50vh] md:h-auto bg-[url('/assets/background.png')] bg-cover bg-center bg-no-repeat"
+      >
+        <div className="hidden md:flex justify-between items-baseline">
+          <div className='relative'>
+            <img
+              className="pointer-events-none w-full max-w-[420px]"
+              src="/assets/boy.png"
+              alt="boy"
+            />
+            <img className="absolute top-8 w-[95px] left-[15vw] pointer-events-none" src="/assets/500.png" alt="" />
+            <img className="absolute top-[75%] w-[167px] left-[15vw] pointer-events-none" src="/assets/happy.png" alt="" />
+          </div>
+
+          <div className='relative'>
+            <img className="pointer-events-none w-full max-w-[560px]" src="/assets/girl.png" alt="girl" />
+            <img className="absolute top-[0%] w-[140px] left-80 pointer-events-none" src="/assets/rating.png" alt="" />
+          </div>
         </div>
 
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">
@@ -55,6 +69,21 @@ function App() {
           <Search />
         </div>
       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <section className="w-full pt-16 text-center">
         <h2 className="font-poppins text-[24px] md:text-[40px]">How Old Are You? 🎯</h2>
