@@ -1,0 +1,103 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* page/layout defaults */
+html, body, #root { height: 100%; overflow-x: hidden; }
+
+/* ensure the swiper root allows overflow so the cloud pseudo won't be clipped */
+.swiper,
+.swiper-container,
+.swiper-wrapper {
+  position: relative;
+  overflow: visible !important; /* <- critical so the cloud isn't clipped */
+}
+
+/* ensure slides don't cover the button/cloud */
+.swiper-slide {
+  z-index: 1;
+}
+.swiper-button-prev {
+  display: none !important;
+}
+/* next button (keeps it above slides) */
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  right: 50px !important;
+  transform: translateY(-50%) translateX(6px);
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  opacity: 0;
+  border: 1px solid rgba(0,0,0,0.08);
+  transition: opacity .25s ease, transform .25s cubic-bezier(.2,.9,.2,1), box-shadow .25s ease;
+  background-image: url('/assets/rightArrow.svg'); /* use root path for public/ */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px 35px;
+  color: transparent !important;
+  z-index: 110; /* high so it floats above slides and the cloud */
+  cursor: pointer;
+  will-change: opacity, transform;
+}
+
+/* remove default Swiper glyph */
+.swiper-button-next::after { content: none; }
+
+/* cloud pseudo (behind the button but above slides) */
+/* cloud pseudo (behind the button but above slides) */
+.swiper-button-next::before {
+  content: "";
+  position: absolute;
+  right: -80px;         /* position cloud relative to button */
+  top: 80%;
+  transform: translateY(-50%) scale(0.85);
+  width: 100px;
+  height: 450px;
+  border-radius: 0px;
+  /* change color to white */
+  background:
+    radial-gradient(40% 60% at 30% 40%, rgba(255,255,255,0.60) 0%, rgba(255,255,255,0.40) 25%, rgba(255,255,255,0.30) 50%) ,
+    radial-gradient(30% 40% at 70% 60%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%);
+  filter: blur(18px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .28s ease, transform .35s cubic-bezier(.2,.9,.2,1);
+  z-index: 100; /* slightly below the button but above slides */
+  will-change: opacity, transform;
+}
+
+
+/* reveal button + cloud when hovering the swiper root or when button is focused */
+.swiper:hover .swiper-button-next,
+.swiper-container:hover .swiper-button-next,
+.swiper-button-next:focus {
+  opacity: 1 !important;
+  transform: translateY(-50%) translateX(0);
+  box-shadow: 0 14px 48px -12px rgba(59,130,246,0.28);
+}
+
+/* reveal cloud too */
+.swiper:hover .swiper-button-next::before,
+.swiper-container:hover .swiper-button-next::before,
+.swiper-button-next:focus::before {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+/* safety for clipped parents higher in the DOM: try to allow overflow on immediate wrapper if needed */
+.swiper, .swiper-container, .swiper-wrapper, .swiper-slide {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.three-swiper-container .swiper-button-next {
+  top: 70% !important;
+}
