@@ -11,7 +11,7 @@ Upcoming Webinars: Alerts users to webinars starting within 24 hours, enhanced w
 Category & Time Filters: Explore popular categories and filter courses by time to fit any schedule.
 Responsive Design: Optimized for desktop and mobile, ensuring a seamless learning experience.
 
-### 🛠️ Deploy Link : <a href="https://learn-sphere-tau.vercel.app">Live Link</a>
+### Deploy Link : <a href="https://learn-sphere-tau.vercel.app">Live Link</a>
 
 
 ## 🛠️ Tech Stack
