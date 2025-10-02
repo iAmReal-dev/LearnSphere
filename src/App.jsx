@@ -26,7 +26,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 mb-20">
-      <nav>
+      {/* Sticky Header */}
+      <nav className="sticky top-0 z-50 bg-gray-50 shadow-sm">
         <Header />
       </nav>
 
