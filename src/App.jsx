@@ -26,20 +26,10 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 mb-20">
-      {/* Sticky Header */}
-      <nav className="sticky top-0 z-50 bg-gray-50 shadow-sm">
+
+      <nav className="sticky top-0 z-50">
         <Header />
       </nav>
-
-
-
-
-
-
-
-
-
-
       <section
         className="w-full relative h-[50vh] md:h-auto bg-[url('/assets/background.png')] bg-cover bg-center bg-no-repeat"
       >
@@ -70,21 +60,6 @@ function App() {
           <Search />
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <section className="w-full pt-16 text-center">
         <h2 className="font-poppins text-[24px] md:text-[40px]">How Old Are You? 🎯</h2>
