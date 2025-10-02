@@ -65,7 +65,7 @@ function App() {
         <h2 className="font-poppins text-[24px] md:text-[40px]">How Old Are You? 🎯</h2>
         <p className="font-poppins text-[16px] mt-2">Pick your age and find the perfect courses just for you! ✨</p>
 
-        <div className="flex gap-3 mx-auto justify-center mt-6 flex-wrap md:flex-nowrap max-w-[80vw] ">
+        <div className="flex gap-3 mx-auto justify-center mt-6 flex-wrap md:flex-nowrap md:max-w-[80vw] ">
           {Array.from({ length: count }).map((_, i) => {
             const borderColor = colors[i] ?? '#000';
             return (
