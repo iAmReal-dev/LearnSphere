@@ -8,7 +8,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex items-center py-4 md:py-6 w-full md:w-[80vw] mx-auto justify-between relative min-h-[60px]">
+    <div className="flex items-center py-4 w-full md:w-[80vw] mx-auto justify-between relative min-h-[60px]">
       {/* Logo */}
       <div className="w-[90vw] flex justify-between mx-auto">
 <div className="flex gap-10">
