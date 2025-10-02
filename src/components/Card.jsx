@@ -34,7 +34,7 @@ const Card = ({ data }) => {
         />
 
         {/* tags */}
-        <div className="flex gap-1 mt-3">
+        <div className="flex gap-2 mt-3 flex-wrap">
           {tags.map((t) => (
             <span
               key={t.id}
@@ -61,13 +61,13 @@ const Card = ({ data }) => {
             {/* age */}
             <div className="flex gap-[5px] items-center">
               {icons.person && <img src={icons.person} alt="person" />}
-              <span className="text-sm">{ageRange}</span>
+              <span className="text-sm  whitespace-nowrap">{ageRange}</span>
             </div>
 
             {/* duration */}
             <div className="flex gap-[5px] items-center">
               {icons.clock && <img src={icons.clock} alt="clock" />}
-              <span className="text-sm">{durationMin} min</span>
+              <span className="text-sm  whitespace-nowrap">{durationMin} min</span>
             </div>
 
             {/* price */}
