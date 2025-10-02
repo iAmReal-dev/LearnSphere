@@ -18,7 +18,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`flex items-center py-4 w-full md:w-[100vw] px-[8vw] mx-auto justify-between relative min-h-[60px] transition-all duration-300 ${
+    <div className={`flex items-center py-4 w-full px-[8vw] mx-auto justify-between relative min-h-[60px] transition-all duration-300 ${
       isScrolled ? 'bg-white/85' : 'bg-white/85'
     }`}>
       {/* Logo */}
