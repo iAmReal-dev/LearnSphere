@@ -14,7 +14,7 @@ Responsive Design: Optimized for desktop and mobile, ensuring a seamless learnin
 ## 🛠️ Tech Stack
 
 
-## <a href="/">🛠️ Deploy Link</a>
+## <a href="https://learn-sphere-tau.vercel.app">🛠️ Deploy Link</a>
 Frontend
 
 React: JavaScript library for building dynamic user interfaces. <br>
