@@ -1,16 +1,75 @@
-# React + Vite
+# LearnSphere 🚀
+Welcome to LearnSphere, a vibrant and engaging online learning platform designed to spark curiosity and inspire young minds! 🌟 Tailored for kids, LearnSphere offers a fun, interactive, and personalized way to explore new skills and subjects, accessible anytime, anywhere.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌟 Features
 
-Currently, two official plugins are available:
+Interactive Hero Section: A visually captivating banner with a bold tagline: "Learn a New Skill Everyday, Anytime, and Anywhere."
+Age-Based Course Filters: Kids can select their age range to discover courses tailored just for them, displayed with colorful borders.
+Featured & New Courses: Showcases trending and newly launched courses kids love, presented in a sleek card carousel.
+Top Teachers Showcase: Highlights expert instructors with engaging profiles, including their qualifications, experience, and subjects.
+Upcoming Webinars: Alerts users to webinars starting within 24 hours, enhanced with vibrant visuals.
+Category & Time Filters: Explore popular categories and filter courses by time to fit any schedule.
+Responsive Design: Optimized for desktop and mobile, ensuring a seamless learning experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+Frontend
 
-## React Compiler
+React: JavaScript library for building dynamic user interfaces. <br>
+Tailwind CSS: Utility-first CSS framework for responsive and modern styling.<br>
+Custom Components: Reusable components like Header, Search, CardCarousel, Tabs, and TimeTabs.<br>
+JavaScript: Powers dynamic functionality and interactivity.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Data
 
-## Expanding the ESLint configuration
+Dummy Data: Sample teachers data (public/Data/dummyData.js) for teacher profiles and course displays.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Assets
+
+Custom Images: Backgrounds, teacher photos, and decorative elements in public/assets/.
+<br>
+
+```sh
+📂 Project Structure
+├── public/
+│   ├── assets/                # Images for backgrounds, teacher profiles, etc.
+│   └── Data/
+│       └── dummyData.js       # Sample data for teachers
+├── src/
+│   ├── components/            # Reusable components (Header, Search, CardCarousel, Tabs, TimeTabs)
+│   ├── App.js                 # Main application component
+│   └── index.css              # Global styles (Tailwind CSS)
+├── README.md                  # Project documentation
+└── package.json               # Project dependencies and scripts
+```
+
+
+
+
+![Project Banner](project.png)
+
+## 🚀 Getting Started
+### Prerequisites
+
+Node.js: v16 or higher
+npm: v8 or higher
+
+### Installation
+
+#### Clone the Repository:
+```sh
+git clone https://github.com/yourusername/LearnSphere.git
+cd LearnSphere
+```
+
+#### Install Dependencies:
+```sh
+npm install
+```
+Run the Application:
+npm start
+
+
+Open http://localhost:3000 in your browser to explore LearnSphere! 🎉
+
+
+
