@@ -11,11 +11,12 @@ Upcoming Webinars: Alerts users to webinars starting within 24 hours, enhanced w
 Category & Time Filters: Explore popular categories and filter courses by time to fit any schedule.
 Responsive Design: Optimized for desktop and mobile, ensuring a seamless learning experience.
 
+### 🛠️ Deploy Link : <a href="https://learn-sphere-tau.vercel.app">Live Link</a>
+
+
 ## 🛠️ Tech Stack
 
-
-## <a href="https://learn-sphere-tau.vercel.app">🛠️ Deploy Link</a>
-Frontend
+## Frontend
 
 React: JavaScript library for building dynamic user interfaces. <br>
 Tailwind CSS: Utility-first CSS framework for responsive and modern styling.<br>
